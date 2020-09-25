@@ -37,7 +37,7 @@ header {
 }
 
 header>h1 {
-    color:
+    color: var(--accent1-color);
 }
 
 p {
@@ -79,7 +79,7 @@ p {
 }
 
 nav {
-    background-color: ;
+    background-color: var(--secondary-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
@@ -97,10 +97,10 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color:
+    color: var(--accent1-color);
 }
 
 nav a:hover {
     color: var(--accent2-color);
-    background-color:
+    background-color: var(--accent1-color);
 }
