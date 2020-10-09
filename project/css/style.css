@@ -1,3 +1,37 @@
 body {
     background-color: royalblue;
+
 }
+header {
+background-color: royalblue;
+max-width: 960px;
+margin: 0 auto;
+color: white;
+padding-bottom: 100px;
+}
+
+p {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-style: double;
+    padding: 10px;
+}
+
+#social {
+    text-align: right;
+    block-size: auto;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  footer{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  h2{
+      color:white;
+  }
