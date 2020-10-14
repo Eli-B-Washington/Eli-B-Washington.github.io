@@ -1,36 +1,115 @@
 body {
     background-color: royalblue;
-
-}
-header {
-background-color: royalblue;
-max-width: 960px;
-margin: 0 auto;
-color: white;
-padding-bottom: 100px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 100%;
 }
 
-p {
-    background-color: rgb(0, 0, 0);
+.home{
+    width: auto;
+    margin: 5px;
+    display: flex;
+}
+
+.home div {
+    display: inline-block;
+    margin: 1em 4% 1em 0;
+}
+
+
+.header {
+    background-color: white;
+    padding: 1rem;
+    border: solid 1rem;
+}
+
+.menu {
+    display: inline-block;
+    align-items: center;
+}
+.menu div{
+    display: inline-block;
+    margin: 1em 0% 1em 0;
+}
+.menu li {
+    display: inline;
+}
+
+
+#temple {
+    max-width: 100%;
+}
+
+#family {
+    text-align: center;
+    background-color: royalblue;
+}
+
+h2 {
+    font-size: 2rem;
     color: white;
-    border-style: double;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.heading h1 {
+    color: royalblue;
+    font-size: 2rem;
+}
+
+
+
+
+#hotel {
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#weddings {
+    display: flex;
+    margin: 2rem;
     padding: 10px;
 }
 
 #social {
-    text-align: right;
+    display: flex;
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-width: 1em;
+    padding: 1rem;
+    display: flex;
 }
+#social div {
+    display: inline;
+    margin: 1em 5% 1em 0;
+}
+
 
 main {
     max-width: 960px;
     margin: 0 auto;
-    padding-bottom: 100px;
-  }
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
 
-  footer{
+header {
+    background-color: royalblue;
     max-width: 960px;
     margin: 0 auto;
-  }
-  h2{
-      color:white;
-  }
+    padding-bottom: 2rem;
+
+}
+
+
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#logo {
+    max-width: 5%;
+}
