@@ -17,9 +17,14 @@ header {
     flex-wrap: nowrap;
 }
 
+h1{
+    padding-left: .25em; 
+}
+
 header nav {
     float: right;
-    align-items: center;
+    align-items: bottom;
+    
 }
 
 header nav ul {
@@ -29,6 +34,8 @@ header nav ul {
 
 header nav ul li {
     display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 header nav a {
@@ -58,7 +65,7 @@ h2 {
 
 .image{
     max-width: 100%;
-    border: 2rem black;
+    border: solid 1em white;
 }
 .grid-container {
     display: grid;
@@ -81,19 +88,9 @@ h2 {
     grid-column-start: 1;
     grid-column-end: 3; 
     margin: 2rem;
+    margin-bottom: 0em;
 }
 
-#hotel {
-    display: flex;
-    margin: 2rem;
-    padding: 1rem;
-}
-
-#weddings {
-    display: flex;
-    margin: 2rem;
-    padding: 10px;
-}
 
 #social {
     display: grid;
@@ -104,6 +101,7 @@ h2 {
     border-width: 1em;
     padding: 1rem;
 }
+    
 
 #social-item {
     margin: 1em 5% 1em 0;
@@ -125,4 +123,5 @@ main {
 footer {
     max-width: 960px;
     margin: 0 auto;
+    
 }
