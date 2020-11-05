@@ -17,6 +17,48 @@ header {
     flex-wrap: nowrap;
 }
 
+.banner{
+    max-width: 100%;
+}
+a:hover{ 
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+    
+.banner-box img {
+    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+    
+}
+    
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+    max-width: 50%;
+    max-height: 50%;
+}
+    
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.2em;
+    
+}
+  
+
+
 h1{
     padding-left: .25em; 
 }
@@ -43,10 +85,6 @@ header nav a {
     color: White;
 }
 
-#hero{
-    max-width: 100%;
-}
-
 
 #temple {
     max-width: 960px;
@@ -64,11 +102,14 @@ h2 {
 
 .image{
     max-width: 100%;
-    border: solid 1em white;
+    border: 3px solid white;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 1em;
   }
 
 .home{
@@ -82,8 +123,19 @@ h2 {
 .home1{
     margin: 2rem;
     padding-top: 4rem;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
 }
+
 .home2{
+    margin: 2rem;
+    padding-top: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+   
+}
+.home3{
     grid-column-start: 1;
     grid-column-end: 3; 
     margin: 2rem;
@@ -123,3 +175,26 @@ footer {
     margin: 0 auto;
     
 }
+
+@media screen and (max-width: 550px) {
+    header {
+      display: block;
+      padding-bottom: 6em;
+    }
+    .grid-container{
+        display: block;
+    }
+    #social{
+        display: block;
+    }
+    .action {
+            grid-column: 1;
+            grid-row: 1;
+            background-color: rgba(240, 240, 240, 0.8);
+            margin: 1em 3em;
+            padding: .5em;
+            text-align: center;
+            max-width: 40%;
+            max-height: 40%;
+            font-size: .75em;
+  }
