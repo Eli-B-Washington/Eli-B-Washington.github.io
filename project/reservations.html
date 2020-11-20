@@ -35,93 +35,81 @@
 
         <div class="banner-box" >
             <img class="banner" src="images/spokanetemple.jpg" alt="Temple Picture">
-            <div class="action">
-                <h3>
-                    Plan your next trip with us!
-                </h3>
-                <button>Contact Us</button>
-            </div>
         </div>
 
-        <div class="grid-container">
+        <body>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                   <label for="msg">Message:</label>
+                   <textarea id="msg" name="user_message">
+                   </textarea>
+                 </li>
+                 <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+               </form>
         
-            <div class="home0">
-                <div>
-                    <h2>Your Home Away From Home</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Modi aspernatur fugiat accusantium repellat illum quo facere,
-                        cumque eum temporibus voluptas similique id consectetur animi
-                        suscipit libero? Ab itaque cupiditate fuga?</p>
+               <script>
+                // get the feedback div element so we can do something with it.
+                const feedbackElement = document.getElementById('feedback');
+                // get the form element so we can read what was entered in it.
+                const formElement = document.forms[0];
+                
+                // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                formElement.addEventListener('submit', function(e) {
+                  // stop the form from doing the default action
+                  e.preventDefault();
+                  // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                  feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                  // make the feedback element visible.
+                  feedbackElement.style.display = "block";
+                });
+              </script>
+        </body>
+
+
+
+        <footer>
+            <div id='social'>
+                <div id= 'social-item'>
+                    <p>Temple Inn and Suite Headquarters <br>
+                        355 Wisconsin Avenue<br>
+                        Bethesda, MD. 20814 <br>
+                        215-829-9999 <br>
+                        info@templinn.com <br>
+                    </p>
+                </div>
+                <div id= 'social-item2'>
+                    <a href="https://www.facebook.com/">
+                        <img src="images/facebook-icon.png" alt="Facebook Link" style="width:42px;height:42px;">
+                    </a>
+                    <a href="https://www.instagram.com/?hl=en">
+                        <img src="images/instagram-icon.png" alt="Instagram Link" style="width:42px;height:42px;">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img src="images/twitter-icon.png" alt="Twitter Link" style="width:42px;height:42px;">
+                    </a>
                 </div>
             </div>
-            <div class="home0" id="hotel_image">
-                <img class="image" src="images/hotel.jpg" alt="Hotel Image">
-            </div>
-
-
-            
-            <div class="home1"> 
-                <div id="receptions">
-                    <h2>Wedding Receptions</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Modi aspernatur fugiat accusantium repellat illum quo facere,
-                        cumque eum temporibus voluptas similique id consectetur animi
-                        suscipit libero? Ab itaque cupiditate fuga?</p>
-                </div>
-            </div>
-            <div class="home2">
-                <img  id="reception" class="image" src="images/reception.jpg" alt="Reception Image">
-            </div>
-       
-
-
-        <div class="home3">
-            <h2>Family Search Center</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Expedita voluptatum repellat tempora ad saepe repudiandae 
-                 recusandae placeat voluptates, dicta quibusdam perspiciatis
-                  quas et distinctio quasi sapiente quam voluptatibus error
-                   quo blanditiis doloribus quae nostrum eos facilis? Blanditiis
-                    iusto voluptatum aut laboriosam esse cupiditate velit maxime,
-                     commodi architecto numquam aliquam mollitia, quis repudiandae enim?
-                      Vitae, molestiae dolorum possimus enim, aspernatur dolor blanditiis iste
-                       facere fugiat sequi hic voluptatum accusantium error animi similique iure 
-                       natus repudiandae quos rerum. Illum accusamus incidunt nisi atque odio sunt 
-                       voluptates maxime fuga aliquam, architecto similique sed, iste adipisci! Et ipsam
-                        voluptatum minima cupiditate molestiae veniam voluptates!</p>
-    </div>
-    </div>
-    </main>
-
-    <footer>
-        <div id='social'>
-            <div id= 'social-item'>
-                <p>Temple Inn and Suite Headquarters <br>
-                    355 Wisconsin Avenue<br>
-                    Bethesda, MD. 20814 <br>
-                    215-829-9999 <br>
-                    info@templinn.com <br>
-                </p>
-            </div>
-            <div id= 'social-item2'>
-                <a href="https://www.facebook.com/">
-                    <img src="images/facebook-icon.png" alt="Facebook Link" style="width:42px;height:42px;">
-                </a>
-                <a href="https://www.instagram.com/?hl=en">
-                    <img src="images/instagram-icon.png" alt="Instagram Link" style="width:42px;height:42px;">
-                </a>
-                <a href="https://www.twitter.com/">
-                    <img src="images/twitter-icon.png" alt="Twitter Link" style="width:42px;height:42px;">
-                </a>
-            </div>
-        </div>
-
-
-
-
-        <p>Copyright 2020 Temple Inn and Suites | All rights Reserved | Privacy and Cookie Statement| Eli Bear</p>
-
-    </footer>
+    
+    
+    
+    
+            <p>Copyright 2020 Temple Inn and Suites | All rights Reserved | Privacy and Cookie Statement| Eli Bear</p>
+    
+        </footer>
+        </main>
 </body>
 
 </html>

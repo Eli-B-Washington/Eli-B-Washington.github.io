@@ -142,6 +142,71 @@ h2 {
     margin-bottom: 0em;
 }
 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+.amenity1{
+    margin: 2rem;
+}
+
+.amenity2{
+    margin: 2rem;
+}
+
+.amenity3{
+    margin: 2rem;
+}
+
+.amenity4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    margin: 2rem;
+}
+.amenity5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    margin: 2rem;
+}
+
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 1em;
+  }
+
+.temple1{
+    margin: 2rem;
+}
+
+.temple2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    margin: 2rem;
+}
+
+.temple3{
+    margin: 2rem;
+}
+
+.temple4{
+
+    margin: 2rem;
+}
+.temple5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    margin: 2rem;
+    
+}
+
 
 #social {
     display: grid;
@@ -199,3 +264,79 @@ footer {
             font-size: .75em;
   }
 }
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, 
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus, 
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+
+  #feedback { 
+  /* add styling and layout properties of your own design here as needed */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 4px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: none; /* we will make the element invisible until the form is submitted successfully */
+ }
