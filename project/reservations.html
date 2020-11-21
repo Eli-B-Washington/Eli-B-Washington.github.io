@@ -30,14 +30,13 @@
     </header>
 
     <main>
-  
         
 
         <div class="banner-box" >
             <img class="banner" src="images/spokanetemple.jpg" alt="Temple Picture">
         </div>
-
-        <body>
+        <h2 class= "page_title">Reservations</h2>
+        <body> 
             <div id="feedback"></div>
             <form action="/my-handling-form-page" method="post">
                 <ul>
@@ -50,12 +49,16 @@
                    <input type="email" id="mail" name="user_email">
                  </li>
                  <li>
+                    <label for="mail">Date Requested:</label>
+                    <input type="date" id="date" name="date">
+                  </li>
+                 <li>
                    <label for="msg">Message:</label>
                    <textarea id="msg" name="user_message">
                    </textarea>
                  </li>
                  <li class="button">
-                    <button type="submit">Send your message</button>
+                    <button type="submit">Submit</button>
                   </li>
                 </ul>
                </form>
