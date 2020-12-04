@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> A Simple Media Card</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .card {
+            width: 320px;
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 1px 1px 4px 1px #888;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+        main{
+            width: 340px;
+            height: 425px;
+            background-color:rgb(241, 240, 240);
+            overflow: hidden;
+            margin: 0px auto;
+        }
+
+        footer {
+            margin: 20px;
+            padding: 0px;
+        }
+
+        button {
+            margin: -3px;
+        }
+
+        span {
+            float: right;
+        }
+
+        .viewbutton {
+            border-radius: 4px 0px 0px 4px;
+            background-color: white;
+            font-size: 16px;
+            padding: 6px;
+            border-width: thin;
+        }
+
+        .editButton {
+            border-radius: 0px 4px 4px 0px;
+            background-color: white;
+            font-size: 16px;
+            padding: 6px;
+            border-width: thin;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+    <article class="card">
+
+        <img class="image" src="https://picsum.photos/320/240" alt="Random Image">
+
+        <p>This is a wider card with the supporting text
+            below as a natural lead-in to additional content.
+            This content is a little bit longer.
+        </p>
+        <footer>
+            <button class="viewbutton">View</button>
+            <button class="editButton">Edit</button>
+            <span>9 mins</span>
+        </footer>
+    </article>
+
+        </main>
+    </body>
+    
+
+</html>
