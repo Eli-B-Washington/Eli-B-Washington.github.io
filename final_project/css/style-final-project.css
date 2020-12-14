@@ -130,3 +130,15 @@ nav a:hover {
 h2 {
     text-align: center;
 }
+
+form{
+    background-color:white;
+    border-style: solid;
+    border-color: white;
+    color:black;
+    font-size: 1.5em;
+    max-width: 50%;
+    padding: 5px;
+    margin-left: 25%;
+
+}
