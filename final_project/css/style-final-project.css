@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 :root {
-    --primary-color: black;
+    --primary-color: rgb(2, 1, 24);
     --secondary-color: white;
-    --accent1-color: purple;
-    --accent2-color: rgb(11, 211, 11);
+    --accent1-color: rgb(167, 4, 167);
+    --accent2-color: rgb(216, 126, 9);
     --heading-font: "IM Fell French Canon SC";
     --paragraph-font: Lato, Helvetica, sans-serif
 }
+
 
 html {
     background-color: var(--primary-color)
@@ -22,6 +23,7 @@ body {
 
 img {
     max-width: 100%;
+    box-shadow: 3px 3px 10px 0px white;
 }
 #logo{
     max-width: 150px;  
@@ -114,7 +116,9 @@ nav>ul {
 
 nav a {
     padding: 1em;
-    min-width: 70px
+    min-width: 70px;
+    font-weight: bold;
+    font-size: 1..05em;
 }
 
 nav a:link,
@@ -134,7 +138,7 @@ nav a:hover {
     grid-gap: 20px;
     max-width: 900px;
     font-size: 1.5em;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .grid-container2 {
@@ -150,13 +154,37 @@ h2 {
 }
 
 form{
-    background-color:white;
+    background-color: var(--secondary-color);
     border-style: solid;
-    border-color: white;
+    border-color: var(--accent2-color);
     color:black;
     font-size: 1.5em;
     max-width: 50%;
-    padding: 5px;
+    padding: 10px;
     margin-left: 25%;
 
+}
+.card {
+    box-shadow: 0 4px 8px 0 white;
+    transition: 0.1s;
+    width: 30%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  .mediacard{
+      max-width: 200px;
+  }
+.social{
+    display: flex;
+}
+.home0{
+    text-align: center;
 }
