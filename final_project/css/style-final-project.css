@@ -6,7 +6,7 @@
     --accent1-color: rgb(167, 4, 167);
     --accent2-color: rgb(216, 126, 9);
     --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
+    --paragraph-font: Lato, Helvetica, sans-serif;
 }
 
 main{
@@ -231,4 +231,8 @@ margin-top: 100px;
 }
 .page_title{
     margin-top: 80px;
+}
+.wizard{
+    font-size:1.25em;
+    font-family: var(--heading-font);
 }
