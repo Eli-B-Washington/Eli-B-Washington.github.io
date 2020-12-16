@@ -217,18 +217,12 @@ textarea {
   ul{
     list-style-type: none;
   }
-  ul a{
-      color: var(--accent1-color);
-  }
 
 .social{
 margin-top: 100px;
   }
 
-#links{
-    font-size:1.25em;
-    margin-top: 100px;
-}
+
 .page_title{
     margin-top: 80px;
 }
@@ -238,5 +232,13 @@ margin-top: 100px;
 }
 .inline_link{
     font-size: 1.25em;
-    color: var(--accent1-color);
+    color: white;
+}
+#links{
+    font-size:1.25em;
+    margin-top: 100px;
+    color: white;
+}
+ul a{
+    color: white;
 }
