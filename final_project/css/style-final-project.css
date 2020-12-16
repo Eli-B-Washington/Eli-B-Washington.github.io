@@ -212,6 +212,7 @@ textarea {
   button{
       background:var(--accent2-color);
       width: 75px;
+      font-weight: bold;
   }
 
   ul{
